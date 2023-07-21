@@ -33,13 +33,26 @@ void main() {
 // Perform add operation when number occurs and perform concatenation when string occurs
 // And print the final result as list.
 
-  var list1 = new List.filled(5,null);
-  list1[0] = 10;
-  list1[1] = 11;
-  list1[2] = 12;
-  list1[3] = 13;
-  list1[4] = 14;
+  List? list1 = new List.filled(4,null);
+  list1[0] = "hello";
+  list1[1] = 123;
+  list1[2] = 'woww';
+  list1[3] = 5;
   print(list1);
+
+  var sum='';
+  var sum1=0;
+  for(var i in list1){
+    if(i is String){
+      sum=sum+i;
+    }
+    else if(i is int){
+      sum1=sum1+i;
+    }
 }
+  List? result=List.filled(2, null);
+  result[0]=sum;
+  result[1]=sum1;
+  print('result');
 
 }
